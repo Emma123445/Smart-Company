@@ -1,0 +1,66 @@
+/* Container principal */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Plein écran */
+  overflow: hidden;
+}
+
+/* Effet sombre à gauche */
+.video-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+/* Vidéo de fond responsive */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none; /* Évite les clics dessus */
+}
+
+/* Texte par-dessus la vidéo */
+.video-overlay {
+  position: absolute;
+  bottom: 15vh;
+  left: 8rem;
+  z-index: 2;
+  color: #fff;
+  max-width: 90%;
+}
+
+.video-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.video-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.start-btn {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: #4CD9CC;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #227c70;
+}
