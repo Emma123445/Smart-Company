@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from './component/Navbar/Navbar.jsx';
 import Accueil from './component/Accueil/Accueil.jsx';
 // import Tendances from './component/Tendances/Tendance.jsx';
