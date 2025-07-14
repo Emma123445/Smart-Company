@@ -7,7 +7,7 @@ const Accueil = () => {
     return (
         <div className="video-container">
                 {/* <BsArrowLeft onClick={() => navigate(-1)} /> */}
-            <video autoPlay loop muted className="background-video">
+            <video autoPlay loop className="background-video">
                 <source src={Video} type="video/mp4" />
                 Votre navigateur ne supporte pas les vidéos HTML5.
             </video>
