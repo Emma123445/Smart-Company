@@ -1,5 +1,6 @@
 import React from 'react';
 import Tendance from '../component/Tendances/Tendance';
+import Live from '../component/Lives/Live';
 import video1 from '../Assets/video1.mp4'; 
 import video2 from '../Assets/video2.mp4'; 
 import video3 from '../Assets/video3.mp4'; 
@@ -33,6 +34,7 @@ const VirtrineSmart = (props) => {
     <div>
       
       <Tendance videos={videos} />
+      <Live />
     </div>
   );
 };

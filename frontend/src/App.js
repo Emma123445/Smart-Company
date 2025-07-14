@@ -5,7 +5,7 @@ import Accueil from './component/Accueil/Accueil.jsx';
 // import Tendances from './component/Tendances/Tendance.jsx';
 import VirtrineSmart from './Pages/VirtrineSmart.jsx';
 import Footer from './component/Footer/Footer.jsx';
-import Live from './component/Lives/Live.jsx';
+
 function App() {
   return (
     <div className="App">
@@ -13,7 +13,6 @@ function App() {
         <Navbar />  
         <Accueil />
         <VirtrineSmart />
-        <Live />
         <Footer />
       </BrowserRouter>
     </div> 

@@ -30,6 +30,12 @@ const Live = () => {
       description: "Programme en cours: Émission spéciale",
       thumbnail: liveCover,
     },
+    {
+      id: 5,
+      title: "Chaîne 4",
+      description: "Télé réalitée",
+      thumbnail: liveCover,
+    },
   ];
 
   return (
@@ -43,7 +49,7 @@ const Live = () => {
         {liveChannels.map((channel) => (
           <div className="live-card" key={channel.id}>
             <div className="card-image">
-              <img src={channel.liveCover} alt={channel.title} />
+              <img src={channel.thumbnail} alt={channel.title} />
               <span className="live-badge">LIVE</span>
             </div>
             <div className="card-content">
